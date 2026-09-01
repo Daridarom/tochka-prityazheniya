@@ -1007,6 +1007,39 @@ img {
   line-height: 1.62;
 }
 
+.project-facts {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.55rem;
+  margin: 0 0 1.25rem;
+}
+
+.project-facts > div {
+  display: grid;
+  align-content: end;
+  min-height: 5.6rem;
+  padding: 0.85rem;
+  border: 1px solid var(--line-dark);
+  border-radius: 0.8rem;
+  background: var(--paper);
+}
+
+.project-facts strong {
+  color: var(--ink);
+  font-size: clamp(1.1rem, 2vw, 1.45rem);
+  line-height: 1;
+  letter-spacing: -0.045em;
+}
+
+.project-facts span {
+  margin-top: 0.35rem;
+  color: var(--text-muted);
+  font-size: 0.66rem;
+  font-weight: 700;
+  letter-spacing: 0.075em;
+  text-transform: uppercase;
+}
+
 .project-details-body ul {
   display: grid;
   gap: 0.6rem;
