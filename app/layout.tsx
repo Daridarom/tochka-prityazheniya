@@ -17,7 +17,6 @@ export const metadata: Metadata = {
   ],
   other: {
     "theme-color": "#0a2428",
-    "codex-preview": "development",
   },
   icons: {
     icon: `${basePath}/favicon.svg`,
