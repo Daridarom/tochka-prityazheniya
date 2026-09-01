@@ -1,5 +1,7 @@
 # Точка притяжения
 
+[![GitHub Pages](https://github.com/Daridarom/tochka-prityazheniya/actions/workflows/pages.yml/badge.svg)](https://github.com/Daridarom/tochka-prityazheniya/actions/workflows/pages.yml)
+
 Официальный информационный сайт проектной экосистемы комплексного развития территорий восточного Крыма.
 
 Публичная версия: https://daridarom.github.io/tochka-prityazheniya/
