@@ -7,6 +7,10 @@ import {
   Send,
 } from "lucide-react";
 
+export const dynamic = "force-static";
+
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+
 const directions = [
   {
     number: "01",
@@ -281,7 +285,7 @@ export default function Home() {
         <div className="hero-visual">
           <div className="hero-image-wrap">
             <img
-              src="/media/hero-crimea.webp"
+              src={`${basePath}/media/hero-crimea.webp`}
               alt="Панорама крымского побережья на закате"
               width="1800"
               height="875"
@@ -384,7 +388,7 @@ export default function Home() {
               <article className="project-card" key={project.name}>
                 <div className="project-media">
                   <img
-                    src={project.image}
+                    src={`${basePath}${project.image}`}
                     alt={project.alt}
                     width="1500"
                     height="600"
@@ -474,7 +478,7 @@ export default function Home() {
               <article className="person-card" key={person.name}>
                 <div className="person-image">
                   <img
-                    src={person.image}
+                    src={`${basePath}${person.image}`}
                     alt={person.name}
                     width="720"
                     height="900"
