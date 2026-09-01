@@ -16,7 +16,8 @@ export const metadata: Metadata = {
     "экотуризм",
   ],
   other: {
-    "theme-color": "#081715",
+    "theme-color": "#0a2428",
+    "codex-preview": "development",
   },
   icons: {
     icon: `${basePath}/favicon.svg`,

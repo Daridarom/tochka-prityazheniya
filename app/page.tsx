@@ -16,31 +16,43 @@ const directions = [
     number: "01",
     title: "Территории",
     text: "Комплексные сценарии развития: жильё, общественные пространства, инфраструктура и экономика места.",
+    image: "/media/hero-crimea.webp",
+    alt: "Панорама побережья восточного Крыма",
   },
   {
     number: "02",
     title: "Гостеприимство",
     text: "Туризм, wellness, рекреация и форматы отдыха, которые раскрывают природный характер восточного Крыма.",
+    image: "/media/projects/horizon45/spa.webp",
+    alt: "Ландшафтная SPA-зона у моря",
   },
   {
     number: "03",
     title: "Агро и производство",
     text: "Растениеводство, переработка локальной продукции, современные тепличные и лабораторные решения.",
+    image: "/media/projects/blagodar.webp",
+    alt: "Сельская территория проекта Благодар",
   },
   {
     number: "04",
     title: "Культура и образование",
     text: "Исторические маршруты, музеи, события, семейные программы и образовательные инициативы.",
+    image: "/media/projects/mithridat.webp",
+    alt: "Гора Митридат и исторический ландшафт Керчи",
   },
   {
     number: "05",
     title: "Медиа и сообщества",
     text: "Контент, публичные площадки и партнёрские коммуникации, способные собирать людей вокруг общего дела.",
+    image: "/media/projects/horizon45/events.webp",
+    alt: "Событие в природном амфитеатре",
   },
   {
     number: "06",
     title: "Социальное развитие",
     text: "Рабочие места, проекты для молодёжи, ветеранов и семей, реабилитационные и общественно полезные практики.",
+    image: "/media/projects/horizon45/cafe.webp",
+    alt: "Общественное пространство с видом на море",
   },
 ];
 
@@ -62,6 +74,7 @@ const projects = [
     ],
     registry: "90:07:260301:2121 · 90:07:260301:2255",
     note: "* Земельный контур группы собственников, указанный в презентационных материалах.",
+    wide: true,
   },
   {
     number: "02",
@@ -100,19 +113,44 @@ const projects = [
   {
     number: "04",
     name: "Боспор",
-    location: "восточный Крым",
+    location: "Керченский полуостров · 10 км от Керчи",
     area: "12 га",
-    type: "жизнь и рекреация",
+    type: "событийный и рекреационный кластер",
     image: "/media/projects/bospor.webp",
-    alt: "Побережье восточного Крыма в районе проекта Боспор",
-    lead: "Жилой и рекреационный район для комфортной жизни, спорта, семейного отдыха и восстановления.",
+    alt: "Территория проекта Боспор на Керченском полуострове",
+    lead: "Многофункциональная площадка рядом с Героевским: клубный жилой контур, гостеприимство, события, спорт и восстановление объединены в единую среду.",
+    concept: "Миссия проекта — создать современную площадку для искусства, бизнеса, саморазвития и спорта, дополнив её инфраструктурой для проживания, отдыха, продуктивной работы и восстановления.",
     functions: [
-      "активный спорт и семейный отдых",
-      "деловые и культурные мероприятия",
-      "общественные пространства",
-      "оздоровительный банный комплекс",
+      "купол для массовых мероприятий и открытая сцена",
+      "панорамный ресторан, деловые и культурные программы",
+      "гостиничный контур, модульные отели, гостевые и террасные дома",
+      "SPA, спортивный комплекс и семейная инфраструктура",
+      "общественные пространства и зона проката",
     ],
     registry: "90:07:260301:11",
+    note: "До посёлка Героевское — около 1,5 км. Состав и параметры объектов отражают концептуальные материалы и уточняются проектированием.",
+    stages: [
+      "общественное ядро и базовая инфраструктура",
+      "поэтапное строительство гостевого и жилого контура",
+      "масштабирование событийной и сервисной программы",
+    ],
+    gallery: [
+      {
+        image: "/media/projects/bospor/masterplan.webp",
+        alt: "Концептуальный генеральный план проекта Боспор",
+        caption: "Концептуальный генплан",
+      },
+      {
+        image: "/media/projects/bospor/zoning.webp",
+        alt: "Функциональное зонирование общественного ядра проекта Боспор",
+        caption: "Общественное ядро",
+      },
+      {
+        image: "/media/projects/bospor/event-dome.webp",
+        alt: "Архитектурный образ купола для событий",
+        caption: "Купол событий · референс",
+      },
+    ],
   },
   {
     number: "05",
@@ -130,6 +168,53 @@ const projects = [
       "комфортные дома для проживания",
     ],
     registry: "90:07:260301:2254",
+  },
+  {
+    number: "06",
+    name: "Горизонт 45",
+    location: "Бухта Космонавтов · Керченский полуостров",
+    area: "2,4 га",
+    type: "проект ООО «СЗ „АЗГАРД“»",
+    image: "/media/projects/horizon45/hero.webp",
+    alt: "Бухта Космонавтов и территория ландшафтного комплекса Горизонт 45",
+    lead: "Проект ООО «СЗ „АЗГАРД“»: компактный ландшафтный комплекс у Бухты Космонавтов, где архитектура следует рельефу, а берег сохраняется свободным.",
+    functions: [
+      "30 гостевых домов по 30 м² на внутреннем склоне",
+      "панорамное кафе «Орбита» площадью 200 м²",
+      "SPA, природный амфитеатр и событийная программа",
+      "экотропы и открытый проход к берегу",
+    ],
+    registry: "45.394202° N · 36.627198° E",
+    registryLabel: "Координаты территории",
+    note: "Концептуальные параметры уточняются после ДПТ, изысканий и проектирования.",
+    wide: true,
+    gallery: [
+      {
+        image: "/media/projects/horizon45/houses.webp",
+        alt: "Гостевые дома, встроенные в рельеф",
+        caption: "Архитектура следует склону",
+      },
+      {
+        image: "/media/projects/horizon45/cafe.webp",
+        alt: "Панорамное кафе Орбита",
+        caption: "Кафе «Орбита»",
+      },
+      {
+        image: "/media/projects/horizon45/spa.webp",
+        alt: "Ландшафтная SPA-зона",
+        caption: "SPA и восстановление",
+      },
+    ],
+    links: [
+      {
+        href: "https://daridarom.github.io/gorizont-45/",
+        label: "Открыть сайт проекта",
+      },
+      {
+        href: "https://azgard-crimea.ru/",
+        label: "Исследовать 3D-обзор",
+      },
+    ],
   },
 ];
 
@@ -303,7 +388,7 @@ export default function Home() {
         </div>
 
         <div className="hero-metrics" aria-label="Ключевые факты">
-          <div><strong>05</strong><span>территориальных концепций</span></div>
+          <div><strong>06</strong><span>территориальных концепций</span></div>
           <div><strong>06</strong><span>направлений развития</span></div>
           <div><strong>09</strong><span>отраслевых экспертов</span></div>
           <div><strong>2023</strong><span>год основания компании</span></div>
@@ -357,10 +442,20 @@ export default function Home() {
           <div className="direction-grid">
             {directions.map((direction) => (
               <article className="direction-card" key={direction.number}>
-                <div className="direction-index">{direction.number}</div>
-                <h3>{direction.title}</h3>
-                <p>{direction.text}</p>
-                <span className="direction-line" aria-hidden="true" />
+                <div className="direction-media">
+                  <img
+                    src={`${basePath}${direction.image}`}
+                    alt={direction.alt}
+                    width="900"
+                    height="600"
+                    loading="lazy"
+                  />
+                  <span className="direction-index">{direction.number}</span>
+                </div>
+                <div className="direction-copy">
+                  <h3>{direction.title}</h3>
+                  <p>{direction.text}</p>
+                </div>
               </article>
             ))}
           </div>
@@ -374,7 +469,7 @@ export default function Home() {
             </div>
             <div>
               <p className="overline">География возможностей</p>
-              <h2>Пять территорий.<br />Пять характеров.</h2>
+              <h2>Шесть территорий.<br />Шесть характеров.</h2>
             </div>
             <p className="heading-note">
               Концепции находятся на разных стадиях проработки. Представленные
@@ -385,7 +480,10 @@ export default function Home() {
 
           <div className="project-list">
             {projects.map((project) => (
-              <article className="project-card" key={project.name}>
+              <article
+                className={`project-card${project.wide ? " project-card-wide" : ""}`}
+                key={project.name}
+              >
                 <div className="project-media">
                   <img
                     src={`${basePath}${project.image}`}
@@ -410,16 +508,60 @@ export default function Home() {
                       <span aria-hidden="true">+</span>
                     </summary>
                     <div className="project-details-body">
+                      {project.concept && <p className="project-concept">{project.concept}</p>}
                       <ul>
                         {project.functions.map((item) => (
                           <li key={item}>{item}</li>
                         ))}
                       </ul>
+                      {project.stages && (
+                        <div className="project-stages">
+                          <span>Логика реализации</span>
+                          <ol>
+                            {project.stages.map((stage, index) => (
+                              <li key={stage}>
+                                <b>{String(index + 1).padStart(2, "0")}</b>
+                                {stage}
+                              </li>
+                            ))}
+                          </ol>
+                        </div>
+                      )}
                       <p className="registry">
-                        <span>Кадастровые номера</span>
+                        <span>{project.registryLabel ?? "Кадастровые номера"}</span>
                         {project.registry}
                       </p>
                       {project.note && <p className="project-note">{project.note}</p>}
+                      {project.gallery && (
+                        <div className="project-gallery">
+                          {project.gallery.map((item) => (
+                            <figure key={item.image}>
+                              <img
+                                src={`${basePath}${item.image}`}
+                                alt={item.alt}
+                                width="900"
+                                height="600"
+                                loading="lazy"
+                              />
+                              <figcaption>{item.caption}</figcaption>
+                            </figure>
+                          ))}
+                        </div>
+                      )}
+                      {project.links && (
+                        <div className="project-links">
+                          {project.links.map((link) => (
+                            <a
+                              href={link.href}
+                              key={link.href}
+                              target="_blank"
+                              rel="noreferrer"
+                            >
+                              {link.label} <ArrowUpRight size={16} aria-hidden="true" />
+                            </a>
+                          ))}
+                        </div>
+                      )}
                     </div>
                   </details>
                 </div>
@@ -428,7 +570,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="method section section-acid">
+        <section className="method section section-method">
           <div className="section-kicker">
             <span>04</span>
             <p>Метод</p>
